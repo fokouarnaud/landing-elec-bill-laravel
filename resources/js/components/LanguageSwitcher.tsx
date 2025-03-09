@@ -20,20 +20,20 @@ const LanguageSwitcher: React.FC = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon" aria-label="Select language">
+        <Button variant="ghost" size="icon" aria-label="Select language" className="text-foreground">
           <Globe className="h-5 w-5" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem 
           onClick={() => changeLanguage('en')}
-          className={i18n.language === 'en' ? 'bg-primary/10' : ''}
+          className={i18n.language === 'en' ? 'bg-primary/10 text-primary' : ''}
         >
           English
         </DropdownMenuItem>
         <DropdownMenuItem 
           onClick={() => changeLanguage('fr')}
-          className={i18n.language === 'fr' ? 'bg-primary/10' : ''}
+          className={i18n.language === 'fr' ? 'bg-primary/10 text-primary' : ''}
         >
           Français
         </DropdownMenuItem>

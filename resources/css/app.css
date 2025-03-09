@@ -57,16 +57,16 @@
     --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
     --color-sidebar-border: var(--sidebar-border);
     --color-sidebar-ring: var(--sidebar-ring);
+
+    /* Section backgrounds with entropy theme */
+    --color-section-primary: var(--section-primary);
+    --color-section-primary-foreground: var(--section-primary-foreground);
+    --color-section-secondary: var(--section-secondary);
+    --color-section-secondary-foreground: var(--section-secondary-foreground);
+    --color-section-tertiary: var(--section-tertiary);
+    --color-section-tertiary-foreground: var(--section-tertiary-foreground);
 }
 
-/*
-  The default border color has changed to `currentColor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
 @layer base {
     *,
     ::after,
@@ -77,75 +77,125 @@
     }
 }
 
+/* Light theme - Entropy-inspired electric management system */
 :root {
-    --background: oklch(1 0 0);
-    --foreground: oklch(0.145 0 0);
+    /* Core colors */
+    --background: oklch(0.99 0.01 240);
+    --foreground: oklch(0.2 0.02 240);
     --card: oklch(1 0 0);
-    --card-foreground: oklch(0.145 0 0);
+    --card-foreground: oklch(0.2 0.02 240);
     --popover: oklch(1 0 0);
-    --popover-foreground: oklch(0.145 0 0);
-    --primary: oklch(0.205 0 0);
-    --primary-foreground: oklch(0.985 0 0);
-    --secondary: oklch(0.97 0 0);
-    --secondary-foreground: oklch(0.205 0 0);
-    --muted: oklch(0.97 0 0);
-    --muted-foreground: oklch(0.556 0 0);
-    --accent: oklch(0.97 0 0);
-    --accent-foreground: oklch(0.205 0 0);
-    --destructive: oklch(0.577 0.245 27.325);
-    --destructive-foreground: oklch(0.577 0.245 27.325);
-    --border: oklch(0.922 0 0);
-    --input: oklch(0.922 0 0);
-    --ring: oklch(0.87 0 0);
-    --chart-1: oklch(0.646 0.222 41.116);
-    --chart-2: oklch(0.6 0.118 184.704);
-    --chart-3: oklch(0.398 0.07 227.392);
-    --chart-4: oklch(0.828 0.189 84.429);
-    --chart-5: oklch(0.769 0.188 70.08);
+    --popover-foreground: oklch(0.2 0.02 240);
+    
+    /* Electric blue primary */
+    --primary: oklch(0.60 0.18 235);
+    --primary-foreground: oklch(1 0 0);
+    
+    /* Balanced secondary */
+    --secondary: oklch(0.94 0.04 235);
+    --secondary-foreground: oklch(0.2 0.02 240);
+    
+    /* Subtle UI elements */
+    --muted: oklch(0.95 0.02 240);
+    --muted-foreground: oklch(0.5 0.05 240);
+    --accent: oklch(0.60 0.18 235 / 0.12);
+    --accent-foreground: oklch(0.2 0.02 240);
+    
+    /* Alert/Error energy warning */
+    --destructive: oklch(0.65 0.20 30);
+    --destructive-foreground: oklch(1 0 0);
+    
+    /* Border and focus */
+    --border: oklch(0.9 0.02 240);
+    --input: oklch(0.85 0.02 240);
+    --ring: oklch(0.60 0.18 235);
+    
+    /* Energy data visualization - entropy spectrum */
+    --chart-1: oklch(0.60 0.18 235);  /* Electric blue */
+    --chart-2: oklch(0.58 0.20 190);  /* Cyan */
+    --chart-3: oklch(0.70 0.14 145);  /* Teal */
+    --chart-4: oklch(0.75 0.18 90);   /* Yellow-green */
+    --chart-5: oklch(0.68 0.18 30);   /* Orange */
+    
+    /* Sidebar */
+    --sidebar: oklch(0.98 0.01 240);
+    --sidebar-foreground: oklch(0.2 0.02 240);
+    --sidebar-primary: oklch(0.60 0.18 235);
+    --sidebar-primary-foreground: oklch(1 0 0);
+    --sidebar-accent: oklch(0.94 0.04 235);
+    --sidebar-accent-foreground: oklch(0.2 0.02 240);
+    --sidebar-border: oklch(0.9 0.02 240);
+    --sidebar-ring: oklch(0.6 0.18 235);
+    
+    /* Landing page section backgrounds - entropy flow */
+    --section-primary: oklch(1 0 0);
+    --section-primary-foreground: oklch(0.2 0.02 240);
+    --section-secondary: oklch(0.98 0.02 235 / 0.15);
+    --section-secondary-foreground: oklch(0.2 0.02 240);
+    --section-tertiary: oklch(0.97 0.03 190 / 0.12);
+    --section-tertiary-foreground: oklch(0.2 0.02 240);
+    
+    /* Border radius */
     --radius: 0.625rem;
-    --sidebar: oklch(0.985 0 0);
-    --sidebar-foreground: oklch(0.145 0 0);
-    --sidebar-primary: oklch(0.205 0 0);
-    --sidebar-primary-foreground: oklch(0.985 0 0);
-    --sidebar-accent: oklch(0.97 0 0);
-    --sidebar-accent-foreground: oklch(0.205 0 0);
-    --sidebar-border: oklch(0.922 0 0);
-    --sidebar-ring: oklch(0.87 0 0);
 }
 
+/* Dark theme - Balanced entropy energy system */
 .dark {
-    --background: oklch(0.145 0 0);
-    --foreground: oklch(0.985 0 0);
-    --card: oklch(0.145 0 0);
-    --card-foreground: oklch(0.985 0 0);
-    --popover: oklch(0.145 0 0);
-    --popover-foreground: oklch(0.985 0 0);
-    --primary: oklch(0.985 0 0);
-    --primary-foreground: oklch(0.205 0 0);
-    --secondary: oklch(0.269 0 0);
-    --secondary-foreground: oklch(0.985 0 0);
-    --muted: oklch(0.269 0 0);
-    --muted-foreground: oklch(0.708 0 0);
-    --accent: oklch(0.269 0 0);
-    --accent-foreground: oklch(0.985 0 0);
-    --destructive: oklch(0.396 0.141 25.723);
-    --destructive-foreground: oklch(0.637 0.237 25.331);
-    --border: oklch(0.269 0 0);
-    --input: oklch(0.269 0 0);
-    --ring: oklch(0.439 0 0);
-    --chart-1: oklch(0.488 0.243 264.376);
-    --chart-2: oklch(0.696 0.17 162.48);
-    --chart-3: oklch(0.769 0.188 70.08);
-    --chart-4: oklch(0.627 0.265 303.9);
-    --chart-5: oklch(0.645 0.246 16.439);
-    --sidebar: oklch(0.205 0 0);
-    --sidebar-foreground: oklch(0.985 0 0);
-    --sidebar-primary: oklch(0.985 0 0);
-    --sidebar-primary-foreground: oklch(0.985 0 0);
-    --sidebar-accent: oklch(0.269 0 0);
-    --sidebar-accent-foreground: oklch(0.985 0 0);
-    --sidebar-border: oklch(0.269 0 0);
-    --sidebar-ring: oklch(0.439 0 0);
+    /* Core colors */
+    --background: oklch(0.15 0.02 240);
+    --foreground: oklch(0.95 0.01 240);
+    --card: oklch(0.18 0.02 240);
+    --card-foreground: oklch(0.95 0.01 240);
+    --popover: oklch(0.2 0.03 240);
+    --popover-foreground: oklch(0.95 0.01 240);
+    
+    /* Electric blue primary - brighter for dark mode */
+    --primary: oklch(0.65 0.18 235);
+    --primary-foreground: oklch(0.1 0.01 240);
+    
+    /* Secondary background */
+    --secondary: oklch(0.25 0.05 235);
+    --secondary-foreground: oklch(0.95 0.01 240);
+    
+    /* Subtle UI elements */
+    --muted: oklch(0.22 0.03 240);
+    --muted-foreground: oklch(0.75 0.04 240);
+    --accent: oklch(0.65 0.18 235 / 0.18);
+    --accent-foreground: oklch(0.95 0.01 240);
+    
+    /* Alert/Error - energy warning */
+    --destructive: oklch(0.65 0.15 30);
+    --destructive-foreground: oklch(0.1 0.01 240);
+    
+    /* Border and focus */
+    --border: oklch(0.28 0.03 240);
+    --input: oklch(0.28 0.03 240);
+    --ring: oklch(0.65 0.18 235);
+    
+    /* Energy data visualization - entropy spectrum */
+    --chart-1: oklch(0.65 0.18 235);  /* Electric blue */
+    --chart-2: oklch(0.63 0.20 190);  /* Cyan */
+    --chart-3: oklch(0.75 0.16 145);  /* Teal */
+    --chart-4: oklch(0.78 0.18 90);   /* Yellow-green */
+    --chart-5: oklch(0.70 0.18 30);   /* Orange */
+    
+    /* Sidebar */
+    --sidebar: oklch(0.12 0.02 240);
+    --sidebar-foreground: oklch(0.95 0.01 240);
+    --sidebar-primary: oklch(0.65 0.18 235);
+    --sidebar-primary-foreground: oklch(0.1 0.01 240);
+    --sidebar-accent: oklch(0.25 0.05 235);
+    --sidebar-accent-foreground: oklch(0.95 0.01 240);
+    --sidebar-border: oklch(0.25 0.02 240);
+    --sidebar-ring: oklch(0.65 0.18 235);
+    
+    /* Landing page section backgrounds - entropy flow */
+    --section-primary: oklch(0.18 0.02 240);
+    --section-primary-foreground: oklch(0.95 0.01 240);
+    --section-secondary: oklch(0.15 0.03 235 / 0.95);
+    --section-secondary-foreground: oklch(0.95 0.01 240);
+    --section-tertiary: oklch(0.17 0.03 190 / 0.98);
+    --section-tertiary-foreground: oklch(0.95 0.01 240);
 }
 
 @layer base {

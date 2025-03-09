@@ -4,45 +4,81 @@
         "tagline": "Smart Electric Meter Management",
         "description": "A professional-grade application for managing electric meter readings and generating bills efficiently."
     },
+
     "nav": {
         "home": "Home",
         "features": "Features",
         "download": "Download",
         "faq": "FAQ",
-        "contact": "Contact Us"
+        "contact": "Contact",
+        "getApp": "Get the App"
     },
     "hero": {
-        "title": "Manage Electric Meters with Ease",
-        "subtitle": "Track readings, generate bills, and manage clients all in one place",
-        "cta": "Download Now"
+        "badge": "Smart Energy Management",
+        "title": "Manage Your Electric Meters",
+        "titleHighlight": "Effortlessly",
+        "subtitle": "Track readings, generate bills, and manage clients all in one place with our professional-grade application.",
+        "cta": "Download Now",
+        "secondaryCta": "Learn More",
+        "userRating": "user rating",
+        "savingsLabel": "Average Savings",
+        "featureHighlight": "Camera-based readings"
     },
+
     "features": {
-        "title": "Key Features",
-        "meter": {
-            "title": "Meter Management",
-            "description": "Track multiple meters with location details and client information"
-        },
-        "readings": {
-            "title": "Smart Readings",
-            "description": "Take manual or camera-based readings with our guided assistant"
-        },
-        "billing": {
-            "title": "Automated Billing",
-            "description": "Generate and export bills in PDF format with multiple currency support"
-        },
-        "communication": {
-            "title": "Client Communication",
-            "description": "Email and SMS integration for seamless client interactions"
+        "badge": "Powerful Features",
+        "title": "Everything You Need to Manage Electricity Usage",
+        "subtitle": "Our application offers comprehensive tools designed specifically for electric meter management.",
+        "mainTitle": "Smart Tools for Smart Management",
+        "mainDescription": "ElectriMeter Pro combines powerful features with an intuitive interface, making it easy to track and manage electricity consumption.",
+        "learnMore": "Learn more about features",
+        "mainFeatures": {
+            "tracking": "Real-time meter reading tracking",
+            "reports": "Detailed consumption analytics",
+            "billing": "Automated bill generation",
+            "notifications": "Smart reminders and alerts",
+            "dataExport": "Export data in multiple formats",
+            "multiDevice": "Sync across all your devices"
         }
     },
+
     "download": {
-        "title": "Get the App",
-        "subtitle": "Available on iOS and Android platforms",
-        "appstore": "Download on App Store",
-        "playstore": "Get it on Google Play"
+        "badge": "Get Started Today",
+        "title": "Download ElectriMeter Pro",
+        "subtitle": "Available on iOS and Android platforms with regular updates and new features.",
+        "getTitle": "Get the App Now",
+        "getDescription": "Download ElectriMeter Pro and start optimizing your electricity management today. Available for both iOS and Android devices.",
+        "scanQR": "Scan QR Code",
+        "scanDescription": "Quickly download the app by scanning this QR code with your phone's camera.",
+        "benefitsTitle": "Why Choose ElectriMeter Pro?",
+        "benefits": {
+            "quality": {
+                "title": "Premium Quality",
+                "description": "Built with attention to detail and high-quality standards."
+            },
+            "security": {
+                "title": "Data Security",
+                "description": "Your data is encrypted and securely stored."
+            },
+            "compatibility": {
+                "title": "Cross-Platform",
+                "description": "Works seamlessly on iOS and Android devices."
+            },
+            "support": {
+                "title": "Dedicated Support",
+                "description": "Get help whenever you need it from our team."
+            }
+        }
     },
     "faq": {
-        "title": "Frequently Asked Questions",
+        "badge": "Frequently Asked Questions",
+        "title": "Got Questions? We Have Answers",
+        "subtitle": "Find answers to the most common questions about ElectriMeter Pro.",
+        "needHelp": "Need More Help?",
+        "needHelpText": "If you can't find the answer to your question, our support team is ready to help you.",
+        "contactSupport": "Contact Support",
+        "moreQuestions": "Still have more questions?",
+        "browseAll": "Browse All FAQs",
         "questions": {
             "q1": "How do I add a new meter?",
             "a1": "Tap the + button on the meters screen and fill in the required details including location and client information.",
@@ -56,20 +92,14 @@
             "a5": "Yes, you can export bills as PDF documents and share them via email or other apps on your device."
         }
     },
-    "contact": {
-        "title": "Contact Our Team",
-        "subtitle": "Have questions or feedback? We'd love to hear from you!",
-        "name": "Name",
-        "email": "Email",
-        "message": "Message",
-        "submit": "Send Message",
-        "success": "Your message has been sent. We'll get back to you soon!",
-        "error": "There was an error sending your message. Please try again."
-    },
     "social": {
-        "title": "Share with Your Network",
-        "description": "Help us spread the word about ElectriMeter Pro and make electricity management easier for everyone.",
+        "badge": "Customer Testimonials",
+        "title": "What Our Users Say",
+        "description": "Discover how ElectriMeter Pro helps businesses and individuals manage their electricity usage more efficiently.",
+        "shareTitle": "Spread the Word",
+        "shareDescription": "If you find our app helpful, please share it with your friends and colleagues.",
         "share": "Share",
+        "shareOn": "Share on",
         "testimonials": {
             "1": {
                 "text": "ElectriMeter Pro has completely transformed how we track our energy usage. The interface is intuitive and the billing features save me hours each month!",
@@ -88,16 +118,62 @@
             }
         }
     },
+
+    "contact": {
+        "badge": "Get In Touch",
+        "title": "Contact Our Team",
+        "subtitle": "Have questions or feedback? We'd love to hear from you.",
+        "getInTouch": "Contact Information",
+        "getInTouchText": "Feel free to reach out to us through any of these channels. We're here to help!",
+        "emailText": "For general inquiries and support:",
+        "phoneText": "Call us directly for urgent matters:",
+        "addressText": "Visit our headquarters:",
+        "officeHours": "Office Hours",
+        "mondayFriday": "Monday to Friday",
+        "weekend": "Weekend",
+        "closed": "Closed",
+        "sendMessage": "Send Us A Message",
+        "name": "Full Name",
+        "namePlaceholder": "Enter your full name",
+        "email": "Email Address",
+        "emailPlaceholder": "Enter your email address",
+        "subject": "Subject",
+        "subjectPlaceholder": "What is your message about?",
+        "message": "Your Message",
+        "messagePlaceholder": "Type your message here...",
+        "submit": "Send Message",
+        "success": "Your message has been sent. We'll get back to you soon!",
+        "error": "There was an error sending your message. Please try again."
+    },
+
     "footer": {
+        "newsletter": {
+            "title": "Subscribe to Our Newsletter",
+            "description": "Get the latest updates, news and product offers sent straight to your inbox.",
+            "placeholder": "Enter your email",
+            "button": "Subscribe"
+        },
+        "about": "ElectriMeter Pro helps you monitor, track and manage electricity consumption efficiently while automating billing processes.",
+        "quickLinksTitle": "Quick Links",
+        "quickLinks": {
+            "support": "Support",
+            "documentation": "Documentation",
+            "updates": "Updates",
+            "community": "Community"
+        },
         "navigation": "Navigation",
         "contact": "Contact Us",
-        "legal": "Legal",
+        "contactInfo": {
+            "email": "Email",
+            "phone": "Phone",
+            "address": "Address"
+        },
+        "language": "Language",
         "copyright": "© 2025 ElectriMeter Pro. All rights reserved.",
+        "madeWith": "Made with",
+        "byTeam": "in France",
         "privacy": "Privacy Policy",
         "terms": "Terms of Service",
-        "cookies": "Cookie Policy",
-        "language": "Language",
-        "sitemap": "Sitemap",
-        "accessibility": "Accessibility"
+        "cookies": "Cookie Policy"
     }
 }

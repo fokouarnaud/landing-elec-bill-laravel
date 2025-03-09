@@ -19,6 +19,10 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        energy: 
+          "bg-gradient-to-r from-[oklch(0.6_0.18_235)] to-[oklch(0.58_0.20_190)] text-white shadow-sm hover:shadow-md hover:brightness-105 relative overflow-hidden",
+        gradient:
+          "bg-gradient-to-r from-primary to-[oklch(0.6_0.2_235)] text-primary-foreground shadow-sm hover:shadow-md hover:brightness-105"
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",
@@ -45,13 +49,28 @@ function Button({
     asChild?: boolean
   }) {
   const Comp = asChild ? Slot : "button"
+  const isEnergyVariant = variant === 'energy';
 
   return (
     <Comp
       data-slot="button"
       className={cn(buttonVariants({ variant, size, className }))}
       {...props}
-    />
+    >
+      {props.children}
+      
+      {/* Effet d'énergie animée pour le variant energy */}
+      {isEnergyVariant && (
+        <span className="absolute inset-0 overflow-hidden rounded-md pointer-events-none">
+          {/* Effet de grille subtil */}
+          <span className="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxwYXR0ZXJuIGlkPSJncmlkIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPjxwYXRoIGQ9Ik0gMjAgMCBMIDAgMCAwIDIwIiBmaWxsPSJub25lIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjAuNSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')]"></span>
+          
+          {/* Lignes d'énergie horizontale et verticale */}
+          <span className="absolute -inset-x-1 bottom-0 h-[2px] bg-gradient-to-r from-transparent via-white to-transparent opacity-30"></span>
+          <span className="absolute -inset-y-1 right-0 w-[2px] bg-gradient-to-b from-transparent via-white to-transparent opacity-30"></span>
+        </span>
+      )}
+    </Comp>
   )
 }
 
