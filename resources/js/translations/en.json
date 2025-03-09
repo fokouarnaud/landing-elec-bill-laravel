@@ -1,0 +1,103 @@
+{
+    "app": {
+        "name": "ElectriMeter Pro",
+        "tagline": "Smart Electric Meter Management",
+        "description": "A professional-grade application for managing electric meter readings and generating bills efficiently."
+    },
+    "nav": {
+        "home": "Home",
+        "features": "Features",
+        "download": "Download",
+        "faq": "FAQ",
+        "contact": "Contact Us"
+    },
+    "hero": {
+        "title": "Manage Electric Meters with Ease",
+        "subtitle": "Track readings, generate bills, and manage clients all in one place",
+        "cta": "Download Now"
+    },
+    "features": {
+        "title": "Key Features",
+        "meter": {
+            "title": "Meter Management",
+            "description": "Track multiple meters with location details and client information"
+        },
+        "readings": {
+            "title": "Smart Readings",
+            "description": "Take manual or camera-based readings with our guided assistant"
+        },
+        "billing": {
+            "title": "Automated Billing",
+            "description": "Generate and export bills in PDF format with multiple currency support"
+        },
+        "communication": {
+            "title": "Client Communication",
+            "description": "Email and SMS integration for seamless client interactions"
+        }
+    },
+    "download": {
+        "title": "Get the App",
+        "subtitle": "Available on iOS and Android platforms",
+        "appstore": "Download on App Store",
+        "playstore": "Get it on Google Play"
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "questions": {
+            "q1": "How do I add a new meter?",
+            "a1": "Tap the + button on the meters screen and fill in the required details including location and client information.",
+            "q2": "Can I take a photo of my meter reading?",
+            "a2": "Yes, our app includes a camera feature with guided reading assistant to help you capture accurate readings.",
+            "q3": "How are bills calculated?",
+            "a3": "Bills are calculated based on the difference between current and previous readings, multiplied by the price per kWh you've set for each meter.",
+            "q4": "Does the app support multiple languages?",
+            "a4": "Yes, the app currently supports English and French with more languages coming soon.",
+            "q5": "Can I export billing data?",
+            "a5": "Yes, you can export bills as PDF documents and share them via email or other apps on your device."
+        }
+    },
+    "contact": {
+        "title": "Contact Our Team",
+        "subtitle": "Have questions or feedback? We'd love to hear from you!",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "submit": "Send Message",
+        "success": "Your message has been sent. We'll get back to you soon!",
+        "error": "There was an error sending your message. Please try again."
+    },
+    "social": {
+        "title": "Share with Your Network",
+        "description": "Help us spread the word about ElectriMeter Pro and make electricity management easier for everyone.",
+        "share": "Share",
+        "testimonials": {
+            "1": {
+                "text": "ElectriMeter Pro has completely transformed how we track our energy usage. The interface is intuitive and the billing features save me hours each month!",
+                "author": "Alex Martin",
+                "position": "Small Business Owner"
+            },
+            "2": {
+                "text": "I've tried several meter management apps, but ElectriMeter Pro is by far the most comprehensive. The ability to capture readings with my camera is a game-changer.",
+                "author": "Sarah Johnson",
+                "position": "Property Manager"
+            },
+            "3": {
+                "text": "As someone managing multiple properties, this app has made tracking electricity consumption so much easier. The support team is also incredibly responsive!",
+                "author": "Michael Chen",
+                "position": "Real Estate Investor"
+            }
+        }
+    },
+    "footer": {
+        "navigation": "Navigation",
+        "contact": "Contact Us",
+        "legal": "Legal",
+        "copyright": "© 2025 ElectriMeter Pro. All rights reserved.",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service",
+        "cookies": "Cookie Policy",
+        "language": "Language",
+        "sitemap": "Sitemap",
+        "accessibility": "Accessibility"
+    }
+}

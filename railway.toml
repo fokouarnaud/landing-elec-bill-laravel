@@ -1,0 +1,20 @@
+[build]
+builder = "nixpacks"
+buildCommand = "npm run build"
+
+[deploy]
+startCommand = "php artisan migrate --force && php artisan storage:link && php artisan config:cache && php artisan view:cache && php artisan serve --host=0.0.0.0 --port=${PORT}"
+healthcheckPath = "/"
+healthcheckTimeout = 100
+restartPolicyType = "on-failure"
+restartPolicyMaxRetries = 10
+
+[environments]
+  [environments.production]
+    name = "production"
+    APP_ENV = "production"
+    APP_DEBUG = "false"
+    LOG_CHANNEL = "stderr"
+    CACHE_DRIVER = "file"
+    SESSION_DRIVER = "cookie"
+    QUEUE_CONNECTION = "sync"

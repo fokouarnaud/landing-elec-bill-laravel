@@ -1,0 +1,103 @@
+{
+    "app": {
+        "name": "ElectriMeter Pro",
+        "tagline": "Gestion Intelligente de Compteurs Électriques",
+        "description": "Une application professionnelle pour gérer les relevés de compteurs électriques et générer des factures efficacement."
+    },
+    "nav": {
+        "home": "Accueil",
+        "features": "Fonctionnalités",
+        "download": "Télécharger",
+        "faq": "FAQ",
+        "contact": "Nous Contacter"
+    },
+    "hero": {
+        "title": "Gérez vos Compteurs Électriques Facilement",
+        "subtitle": "Suivez les relevés, générez des factures et gérez vos clients en un seul endroit",
+        "cta": "Télécharger Maintenant"
+    },
+    "features": {
+        "title": "Fonctionnalités Clés",
+        "meter": {
+            "title": "Gestion des Compteurs",
+            "description": "Suivez plusieurs compteurs avec détails de localisation et informations client"
+        },
+        "readings": {
+            "title": "Relevés Intelligents",
+            "description": "Effectuez des relevés manuels ou par caméra avec notre assistant guidé"
+        },
+        "billing": {
+            "title": "Facturation Automatisée",
+            "description": "Générez et exportez des factures au format PDF avec prise en charge de plusieurs devises"
+        },
+        "communication": {
+            "title": "Communication Client",
+            "description": "Intégration d'email et SMS pour des interactions client fluides"
+        }
+    },
+    "download": {
+        "title": "Obtenir l'Application",
+        "subtitle": "Disponible sur iOS et Android",
+        "appstore": "Télécharger sur l'App Store",
+        "playstore": "Obtenir sur Google Play"
+    },
+    "faq": {
+        "title": "Questions Fréquemment Posées",
+        "questions": {
+            "q1": "Comment ajouter un nouveau compteur ?",
+            "a1": "Appuyez sur le bouton + sur l'écran des compteurs et remplissez les détails requis, y compris l'emplacement et les informations client.",
+            "q2": "Puis-je prendre une photo de mon relevé de compteur ?",
+            "a2": "Oui, notre application inclut une fonction caméra avec un assistant de lecture guidé pour vous aider à capturer des relevés précis.",
+            "q3": "Comment les factures sont-elles calculées ?",
+            "a3": "Les factures sont calculées en fonction de la différence entre les relevés actuels et précédents, multipliée par le prix par kWh que vous avez défini pour chaque compteur.",
+            "q4": "L'application prend-elle en charge plusieurs langues ?",
+            "a4": "Oui, l'application prend actuellement en charge l'anglais et le français, d'autres langues seront disponibles prochainement.",
+            "q5": "Puis-je exporter les données de facturation ?",
+            "a5": "Oui, vous pouvez exporter les factures au format PDF et les partager par email ou d'autres applications sur votre appareil."
+        }
+    },
+    "contact": {
+        "title": "Contactez Notre Équipe",
+        "subtitle": "Vous avez des questions ou des commentaires ? Nous serions ravis de vous entendre !",
+        "name": "Nom",
+        "email": "Email",
+        "message": "Message",
+        "submit": "Envoyer le Message",
+        "success": "Votre message a été envoyé. Nous vous répondrons bientôt !",
+        "error": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer."
+    },
+    "social": {
+        "title": "Partagez avec Votre Réseau",
+        "description": "Aidez-nous à faire connaître ElectriMeter Pro et à faciliter la gestion de l'électricité pour tous.",
+        "share": "Partager",
+        "testimonials": {
+            "1": {
+                "text": "ElectriMeter Pro a complètement transformé notre façon de suivre notre consommation d'énergie. L'interface est intuitive et les fonctionnalités de facturation me font gagner des heures chaque mois !",
+                "author": "Alex Martin",
+                "position": "Propriétaire de petite entreprise"
+            },
+            "2": {
+                "text": "J'ai essayé plusieurs applications de gestion de compteurs, mais ElectriMeter Pro est de loin la plus complète. La possibilité de capturer les relevés avec ma caméra change vraiment la donne.",
+                "author": "Sarah Johnson",
+                "position": "Gestionnaire immobilier"
+            },
+            "3": {
+                "text": "En tant que gestionnaire de plusieurs propriétés, cette application a rendu le suivi de la consommation d'électricité tellement plus facile. L'équipe de support est également incroyablement réactive !",
+                "author": "Michael Chen",
+                "position": "Investisseur immobilier"
+            }
+        }
+    },
+    "footer": {
+        "navigation": "Navigation",
+        "contact": "Nous Contacter",
+        "legal": "Mentions Légales",
+        "copyright": "© 2025 ElectriMeter Pro. Tous droits réservés.",
+        "privacy": "Politique de Confidentialité",
+        "terms": "Conditions d'Utilisation",
+        "cookies": "Politique de Cookies",
+        "language": "Langue",
+        "sitemap": "Plan du site",
+        "accessibility": "Accessibilité"
+    }
+}
